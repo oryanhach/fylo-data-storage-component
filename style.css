@@ -1,0 +1,108 @@
+/* CUSTOME PROPERTIES */
+:root {
+	/* Colors */
+	--clr-white: hsl(0, 100%, 100%);
+	--clr-black: hsl(0, 0%, 0%);
+
+	--clr-blue-200: hsl(243, 100%, 93%);
+	--clr-blue-600: hsl(228, 55%, 62%);
+	--clr-blue-850: hsl(228, 56%, 26%);
+	--clr-blue-900: hsl(224, 61%, 15%);
+	--clr-blue-950: hsl(229, 57%, 11%);
+
+	--clr-gradient-1-a: hsl(228, 56%, 26%);
+	--clr-gradient-1-b: hsl(229, 57%, 11%);
+
+	--clr-gradient-2-a: hsl(6, 100%, 80%);
+	--clr-gradient-2-b: hsl(335, 100%, 65%);
+
+	/* Typography */
+	--ff-main: 'Raleway', sans-serif;
+
+	--fs-1: 40px;
+	--fs-2: 14px;
+	--fs-3: 12px;
+
+	--fw-bold: 700;
+	--fw-normal: 400;
+
+	--lh-1: 100%;
+	--lh-2: 115%;
+}
+
+/* CSS RESET */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+	margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body {
+	/* 4. Increase line-height */
+	line-height: 1.5;
+	/* 5. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
+}
